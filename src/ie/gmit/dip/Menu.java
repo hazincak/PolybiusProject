@@ -17,10 +17,9 @@ public class Menu {
             System.out.println("_____Polybius Square Cypher_____");
             System.out.println("********************************");
             System.out.println("1, Encryption");
-            System.out.println("2, Decryption");
-            System.out.println("3, Encryption and decryption");
-            System.out.println("4, Exit");
-            System.out.println("Select an option(1-4)");
+            System.out.println("2, Encryption and decryption");
+            System.out.println("3, Exit");
+            System.out.println("Select an option(1-3)");
 
             // parsing input
             int selection = Integer.parseInt(in.nextLine());
@@ -30,10 +29,8 @@ public class Menu {
             if (selection == 1) {
                 encryptionProcess(in);
             } else if (selection == 2) {
-                decryptionProcess(in);
-            } else if (selection == 3) {
                 encAndDecProcess(in);
-            } else if (selection == 4) {
+            } else if (selection == 3) {
                 break;
             } else {
                 System.out.println("Invalid choice");
@@ -58,16 +55,6 @@ public class Menu {
         System.out.println(ENCRYPTED_TEXT + " " + encrypted);
     }
 
-    private void decryptionProcess(Scanner in) {
-        System.out.println("Enter cipher text for decryption");
-        String plainText = in.nextLine();
-        System.out.println("Enter the key for decryption");
-        String key = in.nextLine();
-        System.out.println("********************************");
-        PolybiusSquareCipher polybius = new PolybiusSquareCipher(key);
-        String decrypted = polybius.decryptWord(plainText);
-        System.out.println(DECRYPTED_TEXT + " " + decrypted);
-    }
 
     private void encAndDecProcess(Scanner in) {
         System.out.println("Enter text for encrypting and decrypting process");

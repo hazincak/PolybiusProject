@@ -85,8 +85,12 @@ public class PolybiusSquareCipher {
 
     }
 
+
+
     public String decryptWord(String sortedCipherText) {
+
         String[][] sortedMatrix = sortedGrid(sortedCipherText, numOfRows, sortedKey);
+
         String tempCipherText = halfDecryption(sortedMatrix);
         String originalPlainText = fullDecryption(tempCipherText);
         return originalPlainText;
@@ -284,7 +288,6 @@ public class PolybiusSquareCipher {
      */
 
     private String halfDecryption(String[][] sortedMatrix) {
-
         String[] keyInArray = new String[secretWord.length()];
         String halfDecryptedText;
         String tempCipherText;

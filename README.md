@@ -2,11 +2,11 @@
 
 ## Description
 
-Java application capable of encrypting and decrypting a short message using an ADFGVX cypher.
+A Java application capable of encrypting and decrypting a short message using an ADFGVX cypher.
 
 ## How to run
 
-1.	Enter projects folder and navigate into java file directory with following command:
+1.	Enter the projects folder and navigate to the java file directory using the following command:
 
 ```cd src/ie/gmit/dip```
 
@@ -14,9 +14,9 @@ Java application capable of encrypting and decrypting a short message using an A
 
 ```javac Main.java Menu.java PolybiusSquareCipher.java```
 
-3. Type *ls* command (Windows PowerShell or Git Bash) or *dir* command (Command Prompt) to make sure that you have all your compiled files ending with .class
+3. Type *ls* command (Windows PowerShell or Git Bash) or *dir* command (Command Prompt) to ensure that you have all your compiled files ending with .class
 
-4. REturn to *src* directory and execute following command to run the server:
+4. Return to the *src* directory and execute the following command to run the application:
 
 ```java ie.gmit.dip.Main```
 
